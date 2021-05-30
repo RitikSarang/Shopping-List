@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ShoppList</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="grocery_name">Grocery Name</string>
+    <string name="quantity_1">Quantity: %1$s</string>
+    <string name="totalPrice">Total Price: Rs.%1$s</string>
+    <string name="sort_by_priority">Priority</string>
+    <string name="sort_by_price">Price</string>
+    <string name="price">Rs.%1$s</string>
+    <string name="sort_by_enable">Done</string>
+    <string name="Quantity">Quantity</string>
+</resources>

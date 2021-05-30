@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listsFragment">
+
+    <fragment
+        android:id="@+id/listsFragment"
+        android:name="com.example.shopplist.ui.ListsFragment"
+        android:label="Shopp List"
+        tools:layout="@layout/fragment_lists">
+        <action
+            android:id="@+id/action_listsFragment_to_addGroceryFragment"
+            app:destination="@id/addGroceryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGroceryFragment"
+        android:name="com.example.shopplist.ui.AddGroceryFragment"
+        android:label="Add Grocery"
+        tools:layout="@layout/fragment_add_grocery">
+        <action
+            android:id="@+id/action_addGroceryFragment_to_listsFragment"
+            app:destination="@id/listsFragment"
+            app:popUpTo="@id/listsFragment"
+            app:popUpToInclusive="true"/>
+           <!-- app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" -->
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+</navigation>
